@@ -28,7 +28,7 @@ const saleSchema = new mongoose.Schema(
 
         currency: {
             type: String,
-            required: ture,
+            required: true,
             uppercase: true,
             trim: true,
             enum: ["NGN", "USD"],
