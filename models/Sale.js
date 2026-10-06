@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { required, uppercase, maxLength } = require("zod/mini");
 
 const saleSchema = new mongoose.Schema(
     {
@@ -15,7 +14,7 @@ const saleSchema = new mongoose.Schema(
             required: true,
         },
 
-        slaesPerson: {
+        salesPerson: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "User",
             required: true,
